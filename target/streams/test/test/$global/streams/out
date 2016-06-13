@@ -1,0 +1,11 @@
+[0m[[0mdebug[0m] [0mRunning TaskDef(io.swagger.client.api.UserApiTest, sbt.AnnotatedFingerprintWrapper@468f29dc, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(io.swagger.client.api.PetApiTest, sbt.AnnotatedFingerprintWrapper@468f29dc, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(io.swagger.client.api.FakeApiTest, sbt.AnnotatedFingerprintWrapper@468f29dc, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(io.swagger.client.api.StoreApiTest, sbt.AnnotatedFingerprintWrapper@468f29dc, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mSummary for JUnit not available.[0m
+[0m[[0minfo[0m] [0mPassed: Total 21, Failed 0, Errors 0, Passed 21[0m
+[0m[[0mdebug[0m] [0mPassed tests:[0m
+[0m[[0mdebug[0m] [0m	io.swagger.client.api.FakeApiTest[0m
+[0m[[0mdebug[0m] [0m	io.swagger.client.api.StoreApiTest[0m
+[0m[[0mdebug[0m] [0m	io.swagger.client.api.UserApiTest[0m
+[0m[[0mdebug[0m] [0m	io.swagger.client.api.PetApiTest[0m
