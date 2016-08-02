@@ -26,16 +26,45 @@
 package io.swagger.client.model;
 
 import java.util.Objects;
-import io.swagger.client.model.Animal;
+import com.google.gson.annotations.SerializedName;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
 
 /**
- * AnimalFarm
+ * ArrayOfArrayOfNumberOnly
  */
 @javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-08-02T22:42:30.492+08:00")
-public class AnimalFarm extends ArrayList<Animal>  {
+public class ArrayOfArrayOfNumberOnly   {
+  @SerializedName("ArrayArrayNumber")
+  private List<List<BigDecimal>> arrayArrayNumber = new ArrayList<List<BigDecimal>>();
+
+  public ArrayOfArrayOfNumberOnly arrayArrayNumber(List<List<BigDecimal>> arrayArrayNumber) {
+    this.arrayArrayNumber = arrayArrayNumber;
+    return this;
+  }
+
+  public ArrayOfArrayOfNumberOnly addArrayArrayNumberItem(List<BigDecimal> arrayArrayNumberItem) {
+    this.arrayArrayNumber.add(arrayArrayNumberItem);
+    return this;
+  }
+
+   /**
+   * Get arrayArrayNumber
+   * @return arrayArrayNumber
+  **/
+  @ApiModelProperty(example = "null", value = "")
+  public List<List<BigDecimal>> getArrayArrayNumber() {
+    return arrayArrayNumber;
+  }
+
+  public void setArrayArrayNumber(List<List<BigDecimal>> arrayArrayNumber) {
+    this.arrayArrayNumber = arrayArrayNumber;
+  }
+
 
   @Override
   public boolean equals(java.lang.Object o) {
@@ -45,19 +74,21 @@ public class AnimalFarm extends ArrayList<Animal>  {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    return true;
+    ArrayOfArrayOfNumberOnly arrayOfArrayOfNumberOnly = (ArrayOfArrayOfNumberOnly) o;
+    return Objects.equals(this.arrayArrayNumber, arrayOfArrayOfNumberOnly.arrayArrayNumber);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(super.hashCode());
+    return Objects.hash(arrayArrayNumber);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class AnimalFarm {\n");
-    sb.append("    ").append(toIndentedString(super.toString())).append("\n");
+    sb.append("class ArrayOfArrayOfNumberOnly {\n");
+    
+    sb.append("    arrayArrayNumber: ").append(toIndentedString(arrayArrayNumber)).append("\n");
     sb.append("}");
     return sb.toString();
   }

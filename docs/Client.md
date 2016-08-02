@@ -1,10 +1,10 @@
 
-# Cat
+# Client
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**declawed** | **Boolean** |  |  [optional]
+**client** | **String** |  |  [optional]
 
 
 

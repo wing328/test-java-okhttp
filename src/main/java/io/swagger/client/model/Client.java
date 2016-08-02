@@ -26,16 +26,37 @@
 package io.swagger.client.model;
 
 import java.util.Objects;
-import io.swagger.client.model.Animal;
-import java.util.ArrayList;
-import java.util.List;
+import com.google.gson.annotations.SerializedName;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 
 
 /**
- * AnimalFarm
+ * Client
  */
 @javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-08-02T22:42:30.492+08:00")
-public class AnimalFarm extends ArrayList<Animal>  {
+public class Client   {
+  @SerializedName("client")
+  private String client = null;
+
+  public Client client(String client) {
+    this.client = client;
+    return this;
+  }
+
+   /**
+   * Get client
+   * @return client
+  **/
+  @ApiModelProperty(example = "null", value = "")
+  public String getClient() {
+    return client;
+  }
+
+  public void setClient(String client) {
+    this.client = client;
+  }
+
 
   @Override
   public boolean equals(java.lang.Object o) {
@@ -45,19 +66,21 @@ public class AnimalFarm extends ArrayList<Animal>  {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    return true;
+    Client client = (Client) o;
+    return Objects.equals(this.client, client.client);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(super.hashCode());
+    return Objects.hash(client);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class AnimalFarm {\n");
-    sb.append("    ").append(toIndentedString(super.toString())).append("\n");
+    sb.append("class Client {\n");
+    
+    sb.append("    client: ").append(toIndentedString(client)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,10 +1,10 @@
 
-# Cat
+# NumberOnly
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**declawed** | **Boolean** |  |  [optional]
+**justNumber** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
 
 
 

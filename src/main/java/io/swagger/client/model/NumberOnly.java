@@ -26,16 +26,38 @@
 package io.swagger.client.model;
 
 import java.util.Objects;
-import io.swagger.client.model.Animal;
-import java.util.ArrayList;
-import java.util.List;
+import com.google.gson.annotations.SerializedName;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import java.math.BigDecimal;
 
 
 /**
- * AnimalFarm
+ * NumberOnly
  */
 @javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-08-02T22:42:30.492+08:00")
-public class AnimalFarm extends ArrayList<Animal>  {
+public class NumberOnly   {
+  @SerializedName("JustNumber")
+  private BigDecimal justNumber = null;
+
+  public NumberOnly justNumber(BigDecimal justNumber) {
+    this.justNumber = justNumber;
+    return this;
+  }
+
+   /**
+   * Get justNumber
+   * @return justNumber
+  **/
+  @ApiModelProperty(example = "null", value = "")
+  public BigDecimal getJustNumber() {
+    return justNumber;
+  }
+
+  public void setJustNumber(BigDecimal justNumber) {
+    this.justNumber = justNumber;
+  }
+
 
   @Override
   public boolean equals(java.lang.Object o) {
@@ -45,19 +67,21 @@ public class AnimalFarm extends ArrayList<Animal>  {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    return true;
+    NumberOnly numberOnly = (NumberOnly) o;
+    return Objects.equals(this.justNumber, numberOnly.justNumber);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(super.hashCode());
+    return Objects.hash(justNumber);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class AnimalFarm {\n");
-    sb.append("    ").append(toIndentedString(super.toString())).append("\n");
+    sb.append("class NumberOnly {\n");
+    
+    sb.append("    justNumber: ").append(toIndentedString(justNumber)).append("\n");
     sb.append("}");
     return sb.toString();
   }

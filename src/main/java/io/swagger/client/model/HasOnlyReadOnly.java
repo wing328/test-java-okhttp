@@ -26,16 +26,40 @@
 package io.swagger.client.model;
 
 import java.util.Objects;
-import io.swagger.client.model.Animal;
-import java.util.ArrayList;
-import java.util.List;
+import com.google.gson.annotations.SerializedName;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 
 
 /**
- * AnimalFarm
+ * HasOnlyReadOnly
  */
 @javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-08-02T22:42:30.492+08:00")
-public class AnimalFarm extends ArrayList<Animal>  {
+public class HasOnlyReadOnly   {
+  @SerializedName("bar")
+  private String bar = null;
+
+  @SerializedName("foo")
+  private String foo = null;
+
+   /**
+   * Get bar
+   * @return bar
+  **/
+  @ApiModelProperty(example = "null", value = "")
+  public String getBar() {
+    return bar;
+  }
+
+   /**
+   * Get foo
+   * @return foo
+  **/
+  @ApiModelProperty(example = "null", value = "")
+  public String getFoo() {
+    return foo;
+  }
+
 
   @Override
   public boolean equals(java.lang.Object o) {
@@ -45,19 +69,23 @@ public class AnimalFarm extends ArrayList<Animal>  {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    return true;
+    HasOnlyReadOnly hasOnlyReadOnly = (HasOnlyReadOnly) o;
+    return Objects.equals(this.bar, hasOnlyReadOnly.bar) &&
+        Objects.equals(this.foo, hasOnlyReadOnly.foo);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(super.hashCode());
+    return Objects.hash(bar, foo);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class AnimalFarm {\n");
-    sb.append("    ").append(toIndentedString(super.toString())).append("\n");
+    sb.append("class HasOnlyReadOnly {\n");
+    
+    sb.append("    bar: ").append(toIndentedString(bar)).append("\n");
+    sb.append("    foo: ").append(toIndentedString(foo)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,10 +1,10 @@
 
-# Cat
+# ArrayOfNumberOnly
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**declawed** | **Boolean** |  |  [optional]
+**arrayNumber** | [**List&lt;BigDecimal&gt;**](BigDecimal.md) |  |  [optional]
 
 
 

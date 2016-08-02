@@ -26,16 +26,45 @@
 package io.swagger.client.model;
 
 import java.util.Objects;
-import io.swagger.client.model.Animal;
+import com.google.gson.annotations.SerializedName;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
 
 /**
- * AnimalFarm
+ * ArrayOfNumberOnly
  */
 @javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2016-08-02T22:42:30.492+08:00")
-public class AnimalFarm extends ArrayList<Animal>  {
+public class ArrayOfNumberOnly   {
+  @SerializedName("ArrayNumber")
+  private List<BigDecimal> arrayNumber = new ArrayList<BigDecimal>();
+
+  public ArrayOfNumberOnly arrayNumber(List<BigDecimal> arrayNumber) {
+    this.arrayNumber = arrayNumber;
+    return this;
+  }
+
+  public ArrayOfNumberOnly addArrayNumberItem(BigDecimal arrayNumberItem) {
+    this.arrayNumber.add(arrayNumberItem);
+    return this;
+  }
+
+   /**
+   * Get arrayNumber
+   * @return arrayNumber
+  **/
+  @ApiModelProperty(example = "null", value = "")
+  public List<BigDecimal> getArrayNumber() {
+    return arrayNumber;
+  }
+
+  public void setArrayNumber(List<BigDecimal> arrayNumber) {
+    this.arrayNumber = arrayNumber;
+  }
+
 
   @Override
   public boolean equals(java.lang.Object o) {
@@ -45,19 +74,21 @@ public class AnimalFarm extends ArrayList<Animal>  {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    return true;
+    ArrayOfNumberOnly arrayOfNumberOnly = (ArrayOfNumberOnly) o;
+    return Objects.equals(this.arrayNumber, arrayOfNumberOnly.arrayNumber);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(super.hashCode());
+    return Objects.hash(arrayNumber);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class AnimalFarm {\n");
-    sb.append("    ").append(toIndentedString(super.toString())).append("\n");
+    sb.append("class ArrayOfNumberOnly {\n");
+    
+    sb.append("    arrayNumber: ").append(toIndentedString(arrayNumber)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,10 +1,11 @@
 
-# Cat
+# HasOnlyReadOnly
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**declawed** | **Boolean** |  |  [optional]
+**bar** | **String** |  |  [optional]
+**foo** | **String** |  |  [optional]
 
 
 
