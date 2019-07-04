@@ -2,7 +2,7 @@
 
 OpenAPI Petstore
 - API version: 1.0.0
-  - Build date: 2019-07-04T15:56:40.409+08:00[Asia/Hong_Kong]
+  - Build date: 2019-07-04T16:19:19.920+08:00[Asia/Hong_Kong]
 
 This spec is mainly for testing Petstore server and contains fake endpoints, models. Please do not use this for any other purpose. Special characters: \" \\
 

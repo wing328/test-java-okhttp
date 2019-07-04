@@ -28,7 +28,7 @@ import java.io.IOException;
  * Model for testing model with \&quot;_class\&quot; property
  */
 @ApiModel(description = "Model for testing model with \"_class\" property")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2019-07-04T15:56:40.409+08:00[Asia/Hong_Kong]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2019-07-04T16:19:19.920+08:00[Asia/Hong_Kong]")
 public class ClassModel {
   public static final String SERIALIZED_NAME_PROPERTY_CLASS = "_class";
   @SerializedName(SERIALIZED_NAME_PROPERTY_CLASS)

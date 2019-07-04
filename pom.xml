@@ -237,7 +237,7 @@
         </dependency>
         <dependency>
             <groupId>javax.annotation</groupId>
-            <artifactId>javax.annotation-api</artifactId>
+            <artifactId>jsr250-api</artifactId>
             <version>${javax-annotation-version}</version>
         </dependency>
         <!-- test dependencies -->
@@ -259,7 +259,7 @@
         <commons-lang3-version>3.9</commons-lang3-version>
         <threetenbp-version>1.3.8</threetenbp-version>
         <maven-plugin-version>1.0.0</maven-plugin-version>
-        <javax-annotation-version>1.3.2</javax-annotation-version>
+        <javax-annotation-version>1.0</javax-annotation-version>
         <junit-version>4.12</junit-version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>

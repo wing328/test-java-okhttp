@@ -12,8 +12,8 @@ jdk:
   - openjdk8
 script:
   # test using maven
-  #- mvn test
+  - mvn test
   # test using gradle
-  - gradlew test
+  #- gradle test
   # test using sbt 
   # - sbt test
