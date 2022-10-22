@@ -228,7 +228,7 @@ public class PetApi {
 
         // create path and map variables
         String localVarPath = "/pet/{petId}"
-            .replace("{" + "petId" + "}", localVarApiClient.escapeString(petId.toString()));
+            .replaceAll("\\{" + "petId" + "\\}", localVarApiClient.escapeString(petId.toString()));
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
@@ -637,7 +637,7 @@ public class PetApi {
 
         // create path and map variables
         String localVarPath = "/pet/{petId}"
-            .replace("{" + "petId" + "}", localVarApiClient.escapeString(petId.toString()));
+            .replaceAll("\\{" + "petId" + "\\}", localVarApiClient.escapeString(petId.toString()));
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
@@ -902,7 +902,7 @@ public class PetApi {
 
         // create path and map variables
         String localVarPath = "/pet/{petId}"
-            .replace("{" + "petId" + "}", localVarApiClient.escapeString(petId.toString()));
+            .replaceAll("\\{" + "petId" + "\\}", localVarApiClient.escapeString(petId.toString()));
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
@@ -1041,7 +1041,7 @@ public class PetApi {
 
         // create path and map variables
         String localVarPath = "/pet/{petId}/uploadImage"
-            .replace("{" + "petId" + "}", localVarApiClient.escapeString(petId.toString()));
+            .replaceAll("\\{" + "petId" + "\\}", localVarApiClient.escapeString(petId.toString()));
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
@@ -1184,7 +1184,7 @@ public class PetApi {
 
         // create path and map variables
         String localVarPath = "/fake/{petId}/uploadImageWithRequiredFile"
-            .replace("{" + "petId" + "}", localVarApiClient.escapeString(petId.toString()));
+            .replaceAll("\\{" + "petId" + "\\}", localVarApiClient.escapeString(petId.toString()));
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();

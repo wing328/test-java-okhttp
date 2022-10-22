@@ -366,7 +366,7 @@ public class ApiClient {
      * @return a {@link org.openapitools.client.ApiClient} object
      */
     public ApiClient setDateFormat(DateFormat dateFormat) {
-        JSON.setDateFormat(dateFormat);
+        this.json.setDateFormat(dateFormat);
         return this;
     }
 
@@ -377,7 +377,7 @@ public class ApiClient {
      * @return a {@link org.openapitools.client.ApiClient} object
      */
     public ApiClient setSqlDateFormat(DateFormat dateFormat) {
-        JSON.setSqlDateFormat(dateFormat);
+        this.json.setSqlDateFormat(dateFormat);
         return this;
     }
 
@@ -388,7 +388,7 @@ public class ApiClient {
      * @return a {@link org.openapitools.client.ApiClient} object
      */
     public ApiClient setOffsetDateTimeFormat(DateTimeFormatter dateFormat) {
-        JSON.setOffsetDateTimeFormat(dateFormat);
+        this.json.setOffsetDateTimeFormat(dateFormat);
         return this;
     }
 
@@ -399,7 +399,7 @@ public class ApiClient {
      * @return a {@link org.openapitools.client.ApiClient} object
      */
     public ApiClient setLocalDateFormat(DateTimeFormatter dateFormat) {
-        JSON.setLocalDateFormat(dateFormat);
+        this.json.setLocalDateFormat(dateFormat);
         return this;
     }
 
@@ -410,7 +410,7 @@ public class ApiClient {
      * @return a {@link org.openapitools.client.ApiClient} object
      */
     public ApiClient setLenientOnJson(boolean lenientOnJson) {
-        JSON.setLenientOnJson(lenientOnJson);
+        this.json.setLenientOnJson(lenientOnJson);
         return this;
     }
 
