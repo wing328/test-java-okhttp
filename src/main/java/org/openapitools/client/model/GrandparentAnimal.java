@@ -39,6 +39,7 @@ import com.google.gson.reflect.TypeToken;
 import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
@@ -54,7 +55,7 @@ public class GrandparentAnimal {
   @SerializedName(SERIALIZED_NAME_PET_TYPE)
   protected String petType;
 
-  public GrandparentAnimal() { 
+  public GrandparentAnimal() {
     this.petType = this.getClass().getSimpleName();
   }
 
@@ -178,9 +179,7 @@ public class GrandparentAnimal {
   */
   public static void validateJsonObject(JsonObject jsonObj) throws IOException {
       if (jsonObj == null) {
-        if (GrandparentAnimal.openapiRequiredFields.isEmpty()) {
-          return;
-        } else { // has required fields
+        if (!GrandparentAnimal.openapiRequiredFields.isEmpty()) { // has required fields but JSON object is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in GrandparentAnimal is not found in the empty JSON string", GrandparentAnimal.openapiRequiredFields.toString()));
         }
       }

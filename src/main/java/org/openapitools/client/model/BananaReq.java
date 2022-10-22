@@ -39,6 +39,7 @@ import com.google.gson.reflect.TypeToken;
 import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
@@ -58,7 +59,7 @@ public class BananaReq {
   @SerializedName(SERIALIZED_NAME_SWEET)
   private Boolean sweet;
 
-  public BananaReq() { 
+  public BananaReq() {
   }
 
   public BananaReq lengthCm(BigDecimal lengthCm) {
@@ -170,9 +171,7 @@ public class BananaReq {
   */
   public static void validateJsonObject(JsonObject jsonObj) throws IOException {
       if (jsonObj == null) {
-        if (BananaReq.openapiRequiredFields.isEmpty()) {
-          return;
-        } else { // has required fields
+        if (!BananaReq.openapiRequiredFields.isEmpty()) { // has required fields but JSON object is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in BananaReq is not found in the empty JSON string", BananaReq.openapiRequiredFields.toString()));
         }
       }
